@@ -1,11 +1,14 @@
-package udemy.springframework.services.map;
+package udemy.springframework.model.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import udemy.springframework.model.petclinic.Vet;
-import udemy.springframework.services.VetService;
+import udemy.springframework.model.petclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+
     @Override
     public Set<Vet> findAll() {
         return super.findAll();

@@ -1,4 +1,4 @@
-package udemy.springframework.services;
+package udemy.springframework.model.petclinic.services;
 
 import udemy.springframework.model.petclinic.Vet;
 

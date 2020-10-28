@@ -1,11 +1,14 @@
-package udemy.springframework.services.map;
+package udemy.springframework.model.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import udemy.springframework.model.petclinic.Owner;
-import udemy.springframework.services.OwnerService;
+import udemy.springframework.model.petclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -18,12 +21,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public void deleteByID(Long id) {
-         super.deleteByID(id);
+        super.deleteByID(id);
     }
 
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(),object);
+        return super.save(object.getId(), object);
     }
 
     @Override

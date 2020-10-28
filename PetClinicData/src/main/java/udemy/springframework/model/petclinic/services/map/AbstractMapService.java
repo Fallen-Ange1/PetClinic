@@ -1,4 +1,4 @@
-package udemy.springframework.services.map;
+package udemy.springframework.model.petclinic.services.map;
 
 import java.util.*;
 
