@@ -1,11 +1,11 @@
 package udemy.springframework.services.map;
 
 import udemy.springframework.model.petclinic.Vet;
-import udemy.springframework.services.CrudService;
+import udemy.springframework.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
