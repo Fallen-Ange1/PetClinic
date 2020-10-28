@@ -4,10 +4,10 @@ import java.util.*;
 
 public abstract class AbstractMapService<T, ID> {
 
-    protected Map<T, ID> map = new HashMap<>();
+    protected Map<Long,T> map = new HashMap<>();
 
     Set<T> findAll() {
-        return new HashSet<T>((Collection<? extends T>) map.values());
+        return new HashSet<>(map.values());
     }
 
     T findById(ID id) {
@@ -15,7 +15,7 @@ public abstract class AbstractMapService<T, ID> {
     }
 
     T save(ID id, T object) {
-        map.put(object, id);
+        map.put((Long) id, object);
         return object;
     }
 

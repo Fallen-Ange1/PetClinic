@@ -2,15 +2,15 @@ package udemy.springframework.model.petclinic;
 
 public class Person extends BaseEntity{
 
-    private String firstname;
+    private String firstName;
     private String lastName;
 
     public String getFirstname() {
-        return firstname;
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstname(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
